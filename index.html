@@ -13,7 +13,9 @@
   <h1>Emergency Compliment</h1>
 
   <div data-ng-controller='emergencyCompController as vm'>
-    {{vm.data}}
+    <div class="" ng-repeat="data in vm.all">
+{{data}}
+    </div>
   </div>
 
 </body>

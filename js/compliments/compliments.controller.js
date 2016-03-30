@@ -7,6 +7,7 @@
   function EmergencyCompController(){
     var vm = this;
     var randomIndex = Math.floor(Math.random() * data.length);
+    vm.all = data;
     vm.data = data[randomIndex];
   }
 

@@ -2,10 +2,12 @@
 
 (function(){
   var app = angular.module("compliments");
-  app.controller("complimentsController", ComplimentsController);
+  app.controller("mainController", ComplimentsController);
 
   function ComplimentsController(){
     var vm = this;
+    var randomIndex = Math.floor(Math.random() * data.length);
+    vm.compliment = data[randomIndex];
   }
 
 }());
